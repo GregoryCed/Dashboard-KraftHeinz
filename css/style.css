@@ -1,0 +1,24 @@
+:root{
+    --bg-color-primary: #0A3C77;
+}
+
+.form-control{
+    padding: 2rem 2rem;
+}
+
+.btn{
+    width: 100% ;
+    padding: 2rem 2rem;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+.btn:hover {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+.container-sm{
+    background-color: var(--bg-color-primary);
+    width: 50%;
+    height: 70vh;
+    border-radius: 20px;
+}
