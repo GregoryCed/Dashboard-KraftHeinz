@@ -1,5 +1,7 @@
-body{
-    background-color: #0A3C77;
+:root{
+    --bg-color-primary: #0A3C77;
+    --bg-color-secondary: #345F9F;
+    --bg-color-third: #C14040;
 }
 
 .navbar-nav{
@@ -7,38 +9,12 @@ body{
     height: 8vh;
 }
 
-.box-powerbi{
-    min-height: 70vh;
-    min-width: 100%;
+.btn{
+    background-color: var(--bg-color-third);
+    padding: 0.8rem 2.5rem;
+    transition: 0.5s;
 }
 
-.bg-section-primary{
-    background-color: #345F9F;
-}
-
-.box-produtos{
-    min-width: 100%;
-    min-height: 20vh;
-}
-
-.box-filtros{
-    width: 30%;
-    height: 9vh;
-}
-
-.tamanho-section-primary{
-    max-width: 85%;
-    height: 200vh
-}
-
-.select-style{
-    background-color: #C14040;
-    border: none;
-}
-
-.box-cards{
-    width: 90%;
-    height: 60vh;
-    background-color: rgba(255, 255, 255, 0.92);
-    border-radius: 20px;
+.btn:hover {
+    border: var(--bs-border-width) solid var(--bg-color-third); 
 }

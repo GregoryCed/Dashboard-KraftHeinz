@@ -1,0 +1,20 @@
+body{
+    background-color: var(--bg-color-primary);
+}
+
+.box-hero{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/produtosKraftHeinz.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-arrow-scroll{
+    width: 30px;
+    height: 30px;
+    border-right: 5px solid var(--bg-color-third);
+    border-bottom: 5px solid var(--bg-color-third);
+    transform: rotate(45deg);
+    margin-top: 10px;
+}
