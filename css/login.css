@@ -1,0 +1,42 @@
+:root{
+    --bg-color-primary: #0A3C77;
+}
+
+.container-sm{
+    background-color: var(--bg-color-primary);
+    width: 45%;
+    min-width: 45%;
+    min-height: 75vh;
+}
+
+.form-control{
+    color: transparent;
+    background-color: #345F9F;
+    border: none;
+    padding: 1.8rem 1.8rem;
+}
+
+.form-control::placeholder {
+    color: #ffff;
+}
+
+.form-control:focus{
+    background-color: #345F9F;
+}
+
+.box-form{
+    min-width: 80%;
+}
+
+.btn{
+    background-color: #C14040;
+    padding: 1.7rem 7rem;
+}
+
+.btn:hover {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+.container-inputs{
+    height: 30vh;
+}
