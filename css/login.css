@@ -1,3 +1,7 @@
+body{
+    background-color: #ffff;
+}
+
 .container-sm{
     background-color: var(--bg-color-primary);
     width: 45%;

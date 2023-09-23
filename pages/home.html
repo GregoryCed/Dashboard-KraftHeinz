@@ -11,18 +11,18 @@
 
 </head>
 <body>
-    
-    <nav class="navbar bg-light mb-5">
-        <div class="container-fluid mx-5 d-flex flex-row align-items-center justify-content-between">
+
+    <nav class="navbar bg-light mb-5 fixed-top">
+        <div class="container-fluid mx-5 d-flex flex-row align-items-center justify-content-between flex-nowrap">
           <a class="navbar-brand" href="#">
             <img src="../images/kraftHeinzLogo.png" alt="Logo KraftHeinz" width="40%">
           </a>
             <ul class="navbar-nav d-flex flex-row align-items-center justify-content-between">
               <li class="nav-item">
-                <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                <a class="nav-link active fs-5" aria-current="page" href="./home.html" >Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fs-5" href="#">Produtos</a>
+                <a class="nav-link active fs-5" href="./produtos.html">Produtos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active fs-5" href="#">Tickets</a>
@@ -34,13 +34,15 @@
         </div>
       </nav>
 
-      <section class="container bg-dark-subtle rounded-4">
+      <div class="tamanho-nav"></div>
+
+      <section class="container bg-dark-subtle rounded-4 my-5">
         <div class="box-powerbi d-flex aligh justify-content-center align-items-center">
             <h1>PowerBI</h1>
         </div>
       </section>
 
-      <section class="container tamanho-section-primary bg-section-primary rounded-4 mt-5 px-5">
+      <section class="container tamanho-section-primary bg-section-primary rounded-4 my-5 px-5">
 
         <!-- Início seção produtos -->
 
@@ -48,7 +50,7 @@
           <h2 class="fs-1 fw-light">Produtos</h2>
         </div>
         
-        <div class="box-filtros">
+        <div class="box-filtros ">
           <select class="form-select select-style text-light">
             <option selected>Selecione um Filtro</option>
             <option value="1">One</option>
@@ -110,7 +112,7 @@
         <!-- Fim carrosel -->
 
         <div class="box-btn d-flex justify-content-center align-items-center mt-5">
-          <button type="submit" class="btn text-light fw-bold">Ver todos produtos</button>
+          <a href="./produtos.html"><button type="submit" class="btn text-light fw-bold">Ver todos produtos</button></a>
         </div>
         
         <div class="box-linha d-flex align-items-center justify-content-center">
@@ -144,29 +146,29 @@
 
               <div class="d-flex flex-column justify-content-center align-items-center">
                 
-                <div class="row box-cards-ticket justify-content-center align-items-center">
+                <div class="row box-cards-ticket justify-content-center align-items-center p-5">
                   
                   <!-- Inicio card -->
                   
-                  <div class="col-sm-6 mb-3">
+                  <div class="col-sm-6 mb-3 teste">
                     <div class="card">
-                    <div class="card-body">
-                      <div class="container">
+                    <div class="card-body">                      
                         <div class="row">
                           <div class="col-4">
-                            <img src="../images/foto.jpg" alt="" width="100%" class="rounded-circle">
-                            <div class="box-like d-flex align-items-end">
-                              <button class="btn-like" type="submit"><img src="../images/like.png" alt="" width="100%"></button>              
-                              <button class="btn-like" type="submit"><img src="../images/dislike.png" alt="" width="100%"></button>
+                            <img src="../images/foto.jpg" alt="" width="80vw" class="rounded-circle">
+                            <div class="box-like d-flex align-items-end
+                            ">
+                              <button class="btn-like" type="submit"><img src="../images/like.png" alt="" width="30vw"></button>              
+                              <button class="btn-like" type="submit"><img src="../images/dislike.png" alt="" width="30vw"></button>
                             </div>
                           </div>
                           <div class="col-8">
-                            <div class="box-title-card-ticket">
-                              <p>Gregory Cedraz Araujo</p>
+                            <div class="box-title-card-ticket d-flex justfy-content-center align-items-center p-1">
+                              <p class="text-center m-0">Gregory Cedraz Araujo</p>
                             </div>
                             
                             <div class="my-2 ms-2">
-                              <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="30%">
+                              <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw">
                             </div>
                             
                             <div class="text-end">
@@ -174,7 +176,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+
                     </div>
                   </div>
                 </div>

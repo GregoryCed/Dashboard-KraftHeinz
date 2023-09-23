@@ -1,0 +1,45 @@
+.h-container{
+    min-height: 90vh;
+}
+
+.box-hero-title{
+    width: 100%;
+    height: 25vh;
+}
+
+.card-produto{
+    width: 35%;
+    background-color: transparent;
+    border: none;
+}
+
+.box-img-card{
+    background-color: #fff;
+}
+
+.box-cards-ticket{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
+}
+
+.box-like{
+    height: 10vh;
+}
+
+.btn-like{
+    border: none;
+    background-color: transparent;
+}
+
+.box-title-card-ticket{
+    min-width: 100%;
+    min-height: 5vh;
+    background-color: #B9B6B6;
+    border-radius: 50px;
+}
+
+.box-linha{
+    min-height: 50vh;
+    width: 100%;
+}

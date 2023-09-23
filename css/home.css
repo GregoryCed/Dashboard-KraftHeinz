@@ -1,15 +1,10 @@
-body{
-    background-color: var(--bg-color-primary);
-    height: 320vh;
-}
-
 .navbar-nav{
     width: 50%;
     height: 8vh;
 }
 
 .box-powerbi{
-    min-height: 70vh;
+    height: 80vh;
     min-width: 100%;
 }
 
@@ -28,29 +23,19 @@ body{
     
 }
 
-.form-select{
-    width: 30%;
-}
-
 .tamanho-section-primary{
-    max-width: 85%;
-}
-
-.select-style{
-    background-color: var(--bg-color-third);
-    border: none;
+    width: 65%;
 }
 
 .box-cards{
     width: 80%;
-    height: 40vh;
+    height: 53vh;
     background-color: rgba(255, 255, 255, 0.92);
     border-radius: 20px;
 }
 
 .box-cards-ticket{
     width: 80%;
-    height: 60vh;
     background-color: rgba(255, 255, 255, 0.92);
     border-radius: 20px;
 }
@@ -65,7 +50,7 @@ body{
 }
 
 .box-like{
-    height: 10vh;
+    height: 20vh;
 }
 
 .btn-like{
@@ -74,9 +59,20 @@ body{
 }
 
 .box-title-card-ticket{
-    width: 100%;
-    height: 3vh;
+    min-width: 100%;
+    min-height: 3vh;
     background-color: #B9B6B6;
     border-radius: 50px;
-    padding-left: 20px;
+}
+
+.form-select{
+    width: 30%;
+}
+
+.teste{
+    width: 60%;
+}
+
+.img-card-ticket{
+    width: 100%;
 }

@@ -1,7 +1,3 @@
-body{
-    background-color: var(--bg-color-primary);
-}
-
 .box-hero{
     width: 100%;
     height: 80vh;
@@ -17,4 +13,26 @@ body{
     border-bottom: 5px solid var(--bg-color-third);
     transform: rotate(45deg);
     margin-top: 10px;
+}
+
+.pesquisa.style{
+    width: 30%;
+    height: 3vh;
+}
+
+.h-filtros{
+    height: 25vh;
+}
+
+.container-produtos-style{
+    background-color: var(--bg-color-secondary);
+}
+
+.card{
+    background-color: transparent;
+    border: none;
+}
+
+.box-img-card{
+    background-color: #fff;
 }
