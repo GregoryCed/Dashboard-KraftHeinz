@@ -1,0 +1,22 @@
+.box-title{
+    width: 100%;
+    height: 60vh;
+}
+
+.box-filtros{
+    background-color: var(--bg-color-secondary);
+    width: 100%;
+}
+
+.box-cards-ticket{
+    width: 100%;
+    background-color: transparent;
+}
+
+.box-tickets{
+    width: 80%;
+}
+
+.btn{
+    padding: 0.5rem 2.5rem;
+}

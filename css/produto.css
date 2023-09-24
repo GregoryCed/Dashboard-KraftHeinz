@@ -17,29 +17,11 @@
     background-color: #fff;
 }
 
-.box-cards-ticket{
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.92);
-    border-radius: 20px;
-}
-
-.box-like{
-    height: 10vh;
-}
-
-.btn-like{
-    border: none;
-    background-color: transparent;
-}
-
-.box-title-card-ticket{
-    min-width: 100%;
-    min-height: 5vh;
-    background-color: #B9B6B6;
-    border-radius: 50px;
-}
-
 .box-linha{
     min-height: 50vh;
     width: 100%;
+}
+
+.bg-secondary{
+    background-color: var(--background-secondary);
 }
