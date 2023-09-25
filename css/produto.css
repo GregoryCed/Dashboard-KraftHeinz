@@ -1,10 +1,6 @@
-.h-container{
-    min-height: 90vh;
-}
-
-.box-hero-title{
+.box-titles{
     width: 100%;
-    height: 25vh;
+    height: 15vh;
 }
 
 .card-produto{
@@ -18,10 +14,48 @@
 }
 
 .box-linha{
-    min-height: 50vh;
-    width: 100%;
+    min-height: 15vh;
 }
 
-.bg-secondary{
-    background-color: var(--background-secondary);
+.box-informacoes{
+    width: 90%;
+    background-color: var(--bg-color-secondary);
+}
+
+.bg-card-body-perguntas{
+    width: 100%;
+    background-color: #A5BBD7;
+}
+
+.bg-card-body-perguntas p{
+    color: var(--bg-color-primary);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-num-pergunta{
+    width: 100%;
+    height: 5vh;
+    background-color: #ffff;
+}
+
+.card-pergunta{
+    width: 100%;
+    height: 12vh;
+}
+
+.card-pergunta p{
+    background-color: #fff;
+}
+
+.resposta-sim-nao{
+    background-color: #fff;
+}
+
+.respostas-total{
+    background-color: #fff;
+}
+
+.quant-total{
+    height: 12vh;
 }

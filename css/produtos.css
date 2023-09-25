@@ -7,8 +7,8 @@
 }
 
 .hero-arrow-scroll{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-right: 5px solid var(--bg-color-third);
     border-bottom: 5px solid var(--bg-color-third);
     transform: rotate(45deg);
@@ -35,4 +35,36 @@
 
 .box-img-card{
     background-color: #fff;
+}
+
+.box-arrow{
+    height: 20%;
+    width: 100%;
+}
+
+.box-arrow p{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--bg-color-third);
+    text-align: center;
+}
+
+.container-title{
+    height: 80%;
+    width: 100%;
+}
+
+.box-title{
+    width: 30%;
+    height: 15vh;
+    box-shadow: 10px 5px 5px black;
+    background-color: var(--bg-color-third);
+}
+
+.form-select{
+    height: 5vh;
+}
+
+.input-group{
+    height: 5vh;
 }
