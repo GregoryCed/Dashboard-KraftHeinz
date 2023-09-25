@@ -28,7 +28,7 @@
                 <a class="nav-link active fs-5" href="./tickets.html">Tickets</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fs-5" href="#">Perguntas</a>
+                <a class="nav-link active fs-5" href="./perguntas.html">Perguntas</a>
               </li>
             </ul>
         </div>
@@ -37,14 +37,27 @@
     <div class="tamanho-nav"></div> 
 
     <section class="container-fluid p-0">
-        <div class="box-title d-flex align-items-center justify-content-center bg-secondary">
-            <h1 class="text-light fw-light">Tickets</h1>
+        <div class="box-title d-flex align-items-center justify-content-center">
+            <h1 class="text-light fw-light text-center rounded-5 p-4">Todos os Tickets</h1>
         </div>
 
-        <div class="box-filtros d-flex justify-content-end align-items-center p-3">
-            <div class="">
-                <button type="button" class="btn rounded-5 text-light">Ordenar</button>
-            </div>
+        <div class="box-filtros d-flex justify-content-start align-items-center p-3">
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="box-">
+                        <p class="modal-title text-center m-4">Ordenar por:</p>                    
+                    </div>                                   
+                    <div class="modal-body">
+                      Show a second modal and hide this one with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ordenar</button>
 
             <div class="ms-4">
                 <button type="button" class="btn rounded-5 text-light">Filtrar</button>
@@ -56,7 +69,7 @@
         <div class="box-tickets">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 
-                <div class="row box-cards-ticket justify-content-center align-items-center p-5">
+                <div class="row box-cards-ticket justify-content-center align-items-center p-5 mt-5">
                   
                   <!-- Inicio card -->
                   

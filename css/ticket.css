@@ -1,3 +1,11 @@
+.box-section-info{
+    background-color: var(--bg-color-secondary);
+}
+
+.box-section-info p{
+    color: #ffff;
+}
+
 .box-card-ticket{
     width: 50%;
     height: 80vh;
@@ -14,6 +22,7 @@
 .box-avaliacao-media{
     width: 70%;
     height: 50vh;
+    background-color: #A5BBD7;
 }
 
 .box-informação{
@@ -32,10 +41,12 @@
 
 .box-criador{
     height: 100%;
+    background-color: #A5BBD7;
 }
 
 .box-regiao{
     height: 100%;
+    background-color: #A5BBD7;
 }
 
 .box-comentario{
@@ -45,8 +56,6 @@
 .text-area-comentario{
     width: 100%;
     height: 40vh;
+    background-color: #A5BBD7;
 }
 
-.box-comentario{
-    
-}

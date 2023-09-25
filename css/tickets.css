@@ -1,7 +1,16 @@
 .box-title{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(52,95,159,1) 18%);
     width: 100%;
     height: 60vh;
 }
+
+.box-title h1{
+    box-shadow: 10px 5px 5px black;
+    background-color: var(--bg-color-third);
+}
+
+
 
 .box-filtros{
     background-color: var(--bg-color-secondary);
@@ -10,13 +19,22 @@
 
 .box-cards-ticket{
     width: 100%;
-    background-color: transparent;
+    background-color: var(--bg-color-secondary);
 }
 
 .box-tickets{
-    width: 80%;
+    width: 90%;
 }
 
 .btn{
     padding: 0.5rem 2.5rem;
+}
+
+/* Modal */
+.box-modal-title{
+    width: 50%;
+}
+
+.modal-title{
+    background-color: var(--bg-color-third);
 }

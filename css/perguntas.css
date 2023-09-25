@@ -1,0 +1,24 @@
+.box-title{
+    min-height: 40vh;
+}
+
+.box-pergunta{
+    background-color: var(--bg-color-secondary);
+    
+}
+
+.form-select{
+    height: 12vh;
+    
+}
+
+.box-section-produto{
+    background-color: var(--bg-color-secondary);
+    width: 80%;
+}
+
+.box-pergunta-prod{
+    width: 40%;
+    background-color: #A5BBD7;
+}
+
