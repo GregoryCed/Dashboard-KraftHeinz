@@ -10,8 +10,6 @@
     background-color: var(--bg-color-third);
 }
 
-
-
 .box-filtros{
     background-color: var(--bg-color-secondary);
     width: 100%;
@@ -31,10 +29,20 @@
 }
 
 /* Modal */
-.box-modal-title{
-    width: 50%;
+.modal-content{
+    background-color: var(--bg-color-primary);
 }
 
-.modal-title{
+.box-modal-title{
+    width: 100%;
+    min-height: 8vh;
+}
+
+.box-modal-title p{
     background-color: var(--bg-color-third);
+}
+
+.box-modal-radiobtn{
+    width: 100%;
+    background-color: var(--bg-color-secondary);
 }

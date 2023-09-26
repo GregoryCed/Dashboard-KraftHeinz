@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/tickets.css">
 
     <title>Tickets</title>
 </head>
+
 <body>
-    
+
     <nav class="navbar bg-light fixed-top">
         <div class="container-fluid mx-5 d-flex flex-row align-items-center justify-content-between flex-nowrap">
-          <a class="navbar-brand" href="#">
-            <img src="../images/kraftHeinzLogo.png" alt="Logo KraftHeinz" width="40%">
-          </a>
+            <a class="navbar-brand" href="#">
+                <img src="../images/kraftHeinzLogo.png" alt="Logo KraftHeinz" width="40%">
+            </a>
             <ul class="navbar-nav d-flex flex-row align-items-center justify-content-between">
-              <li class="nav-item">
-                <a class="nav-link active fs-5" aria-current="page" href="./home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fs-5" href="./produtos.html">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fs-5" href="./tickets.html">Tickets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fs-5" href="./perguntas.html">Perguntas</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" aria-current="page" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="./produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="./tickets.html">Tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="./perguntas.html">Perguntas</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <div class="tamanho-nav"></div> 
+    <div class="tamanho-nav"></div>
 
     <section class="container-fluid p-0">
         <div class="box-title d-flex align-items-center justify-content-center">
@@ -42,22 +45,56 @@
         </div>
 
         <div class="box-filtros d-flex justify-content-start align-items-center p-3">
-            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="box-">
-                        <p class="modal-title text-center m-4">Ordenar por:</p>                    
-                    </div>                                   
-                    <div class="modal-body">
-                      Show a second modal and hide this one with the button below.
+                    <div class="modal-content">
+                        <div class="box-modal-title d-flex align-items-center justify-content-center my-4">
+                            <p class="text-light fs-4 px-4 py-2 m-0 rounded-4">Ordenar por:</p>
+                        </div>
+                        <div class="box-modal-radiobtn">
+                            <div class="form-check-reverse">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Melhor avaliação
+                                </label>
+                            </div>
+                            <div class="form-check-reverse">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Pior avaliação </label>
+                            </div>
+                            <div class="form-check-reverse">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Maior quantidade de likes </label>
+                            </div>
+                            <div class="form-check-reverse">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Menor quantidade de likes </label>
+                            </div>
+                            <div class="form-check-reverse">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Maior quantidade de dislikes </label>
+                            </div>
+                            <div class="form-check-reverse">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Menor quantidade de dislikes </label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ordenar</button>
+            </div>
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ordenar</button>
 
             <div class="ms-4">
                 <button type="button" class="btn rounded-5 text-light">Filtrar</button>
@@ -68,219 +105,260 @@
     <section class="container d-flex align-items-center justify-content-center">
         <div class="box-tickets">
             <div class="d-flex flex-column justify-content-center align-items-center">
-                
+
                 <div class="row box-cards-ticket justify-content-center align-items-center p-5 mt-5">
-                  
-                  <!-- Inicio card -->
-                  
-                  <div class="col-sm-6 mb-4">
-                    <div class="card">
-                        <a class="text-decoration-none text-dark" href="./ticket.html">
-                        <div class="card-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/foto.jpg" alt="" width="100%" class="rounded-circle">
-                                        <div class="box-like d-flex align-items-end">
-                                            <button class="btn-like" type="submit"><img src="../images/like.png" alt="" width="100%"></button>              
-                                            <button class="btn-like" type="submit"><img src="../images/dislike.png" alt="" width="100%"></button>
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
-                                            <p class="m-0 text-center">Gregory Cedraz Araujo</p>
-                                        </div>
-                                        
-                                        <div class="my-2 ms-2">
-                                            <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw">
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eos atque similique suscipit enim!</p>
+
+                    <!-- Inicio card -->
+
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <a class="text-decoration-none text-dark" href="./ticket.html">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="../images/foto.jpg" alt="" width="100%"
+                                                    class="rounded-circle">
+                                                <div class="box-like d-flex align-items-end">
+                                                    <button class="btn-like" type="submit"><img src="../images/like.png"
+                                                            alt="" width="100%"></button>
+                                                    <button class="btn-like" type="submit"><img
+                                                            src="../images/dislike.png" alt="" width="100%"></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div
+                                                    class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
+                                                    <p class="m-0 text-center">Gregory Cedraz Araujo</p>
+                                                </div>
+
+                                                <div class="my-2 ms-2">
+                                                    <img src="../images/ESTRELAS-removebg-preview.png" alt=""
+                                                        width="90vw">
+                                                </div>
+
+                                                <div class="text-end">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Blanditiis nam eos atque similique suscipit enim!</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        </a>
                     </div>
-                </div>
 
-                <!-- Fim card -->                        
-                
-                <div class="col-sm-6 mb-4">
-                    <div class="card">
-                        <a class="text-decoration-none text-dark" href="./ticket.html">
-                        <div class="card-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/foto.jpg" alt="" width="100%" class="rounded-circle">
-                                        <div class="box-like d-flex align-items-end">
-                                            <button class="btn-like" type="submit"><img src="../images/like.png" alt="" width="100%"></button>              
-                                            <button class="btn-like" type="submit"><img src="../images/dislike.png" alt="" width="100%"></button>
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
-                                            <p class="m-0 text-center">Gregory Cedraz Araujo</p>
-                                        </div>
-                                        
-                                        <div class="my-2 ms-2">
-                                            <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw">
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eos atque similique suscipit enim!</p>
+                    <!-- Fim card -->
+
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <a class="text-decoration-none text-dark" href="./ticket.html">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="../images/foto.jpg" alt="" width="100%"
+                                                    class="rounded-circle">
+                                                <div class="box-like d-flex align-items-end">
+                                                    <button class="btn-like" type="submit"><img src="../images/like.png"
+                                                            alt="" width="100%"></button>
+                                                    <button class="btn-like" type="submit"><img
+                                                            src="../images/dislike.png" alt="" width="100%"></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div
+                                                    class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
+                                                    <p class="m-0 text-center">Gregory Cedraz Araujo</p>
+                                                </div>
+
+                                                <div class="my-2 ms-2">
+                                                    <img src="../images/ESTRELAS-removebg-preview.png" alt=""
+                                                        width="90vw">
+                                                </div>
+
+                                                <div class="text-end">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Blanditiis nam eos atque similique suscipit enim!</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        </a>
                     </div>
-                </div>
 
-                <div class="col-sm-6 mb-4">
-                    <div class="card">
-                        <a class="text-decoration-none text-dark" href="./ticket.html">
-                        <div class="card-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/foto.jpg" alt="" width="100%" class="rounded-circle">
-                                        <div class="box-like d-flex align-items-end">
-                                            <button class="btn-like" type="submit"><img src="../images/like.png" alt="" width="100%"></button>              
-                                            <button class="btn-like" type="submit"><img src="../images/dislike.png" alt="" width="100%"></button>
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
-                                            <p class="m-0 text-center">Gregory Cedraz Araujo</p>
-                                        </div>
-                                        
-                                        <div class="my-2 ms-2">
-                                            <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw">
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eos atque similique suscipit enim!</p>
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <a class="text-decoration-none text-dark" href="./ticket.html">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="../images/foto.jpg" alt="" width="100%"
+                                                    class="rounded-circle">
+                                                <div class="box-like d-flex align-items-end">
+                                                    <button class="btn-like" type="submit"><img src="../images/like.png"
+                                                            alt="" width="100%"></button>
+                                                    <button class="btn-like" type="submit"><img
+                                                            src="../images/dislike.png" alt="" width="100%"></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div
+                                                    class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
+                                                    <p class="m-0 text-center">Gregory Cedraz Araujo</p>
+                                                </div>
+
+                                                <div class="my-2 ms-2">
+                                                    <img src="../images/ESTRELAS-removebg-preview.png" alt=""
+                                                        width="90vw">
+                                                </div>
+
+                                                <div class="text-end">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Blanditiis nam eos atque similique suscipit enim!</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        </a>
                     </div>
-                </div>
 
-                <div class="col-sm-6 mb-4">
-                    <div class="card">
-                        <a class="text-decoration-none text-dark" href="./ticket.html">
-                        <div class="card-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/foto.jpg" alt="" width="100%" class="rounded-circle">
-                                        <div class="box-like d-flex align-items-end">
-                                            <button class="btn-like" type="submit"><img src="../images/like.png" alt="" width="100%"></button>              
-                                            <button class="btn-like" type="submit"><img src="../images/dislike.png" alt="" width="100%"></button>
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
-                                            <p class="m-0 text-center">Gregory Cedraz Araujo</p>
-                                        </div>
-                                        
-                                        <div class="my-2 ms-2">
-                                            <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw">
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eos atque similique suscipit enim!</p>
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <a class="text-decoration-none text-dark" href="./ticket.html">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="../images/foto.jpg" alt="" width="100%"
+                                                    class="rounded-circle">
+                                                <div class="box-like d-flex align-items-end">
+                                                    <button class="btn-like" type="submit"><img src="../images/like.png"
+                                                            alt="" width="100%"></button>
+                                                    <button class="btn-like" type="submit"><img
+                                                            src="../images/dislike.png" alt="" width="100%"></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div
+                                                    class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
+                                                    <p class="m-0 text-center">Gregory Cedraz Araujo</p>
+                                                </div>
+
+                                                <div class="my-2 ms-2">
+                                                    <img src="../images/ESTRELAS-removebg-preview.png" alt=""
+                                                        width="90vw">
+                                                </div>
+
+                                                <div class="text-end">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Blanditiis nam eos atque similique suscipit enim!</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        </a>
                     </div>
-                </div>
 
-                <div class="col-sm-6 mb-4">
-                    <div class="card">
-                        <a class="text-decoration-none text-dark" href="./ticket.html">
-                        <div class="card-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/foto.jpg" alt="" width="100%" class="rounded-circle">
-                                        <div class="box-like d-flex align-items-end">
-                                            <button class="btn-like" type="submit"><img src="../images/like.png" alt="" width="100%"></button>              
-                                            <button class="btn-like" type="submit"><img src="../images/dislike.png" alt="" width="100%"></button>
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
-                                            <p class="m-0 text-center">Gregory Cedraz Araujo</p>
-                                        </div>
-                                        
-                                        <div class="my-2 ms-2">
-                                            <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw">
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eos atque similique suscipit enim!</p>
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <a class="text-decoration-none text-dark" href="./ticket.html">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="../images/foto.jpg" alt="" width="100%"
+                                                    class="rounded-circle">
+                                                <div class="box-like d-flex align-items-end">
+                                                    <button class="btn-like" type="submit"><img src="../images/like.png"
+                                                            alt="" width="100%"></button>
+                                                    <button class="btn-like" type="submit"><img
+                                                            src="../images/dislike.png" alt="" width="100%"></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div
+                                                    class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
+                                                    <p class="m-0 text-center">Gregory Cedraz Araujo</p>
+                                                </div>
+
+                                                <div class="my-2 ms-2">
+                                                    <img src="../images/ESTRELAS-removebg-preview.png" alt=""
+                                                        width="90vw">
+                                                </div>
+
+                                                <div class="text-end">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Blanditiis nam eos atque similique suscipit enim!</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        </a>
                     </div>
-                </div>
 
-                <div class="col-sm-6 mb-4">
-                    <div class="card">
-                        <a class="text-decoration-none text-dark" href="./ticket.html">
-                        <div class="card-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="../images/foto.jpg" alt="" width="100%" class="rounded-circle">
-                                        <div class="box-like d-flex align-items-end">
-                                            <button class="btn-like" type="submit"><img src="../images/like.png" alt="" width="100%"></button>              
-                                            <button class="btn-like" type="submit"><img src="../images/dislike.png" alt="" width="100%"></button>
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
-                                            <p class="m-0 text-center">Gregory Cedraz Araujo</p>
-                                        </div>
-                                        
-                                        <div class="my-2 ms-2">
-                                            <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw">
-                                        </div>
-                                        
-                                        <div class="text-end">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eos atque similique suscipit enim!</p>
+                    <div class="col-sm-6 mb-4">
+                        <div class="card">
+                            <a class="text-decoration-none text-dark" href="./ticket.html">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="../images/foto.jpg" alt="" width="100%"
+                                                    class="rounded-circle">
+                                                <div class="box-like d-flex align-items-end">
+                                                    <button class="btn-like" type="submit"><img src="../images/like.png"
+                                                            alt="" width="100%"></button>
+                                                    <button class="btn-like" type="submit"><img
+                                                            src="../images/dislike.png" alt="" width="100%"></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div
+                                                    class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
+                                                    <p class="m-0 text-center">Gregory Cedraz Araujo</p>
+                                                </div>
+
+                                                <div class="my-2 ms-2">
+                                                    <img src="../images/ESTRELAS-removebg-preview.png" alt=""
+                                                        width="90vw">
+                                                </div>
+
+                                                <div class="text-end">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Blanditiis nam eos atque similique suscipit enim!</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        </a>
                     </div>
-                </div>
 
-              </div>
+                </div>
             </div>
-              
-              <!-- Fim card group -->
+
+            <!-- Fim card group -->
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
