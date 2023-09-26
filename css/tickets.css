@@ -25,14 +25,10 @@
 }
 
 .btn{
-    padding: 0.5rem 2.5rem;
+    padding: 0.8rem 3rem;
 }
 
 /* Modal */
-.modal-content{
-    background-color: var(--bg-color-primary);
-}
-
 .box-modal-title{
     width: 100%;
     min-height: 8vh;
@@ -43,6 +39,30 @@
 }
 
 .box-modal-radiobtn{
-    width: 100%;
+    width: 80%;
+    height: 30vh;
     background-color: var(--bg-color-secondary);
+}
+
+.box-modal-radiobtn label{
+    color: #fff;
+    font-size: 18px;
+}
+
+.form-check-reverse{
+    width: 80%;
+}
+
+.form-check-input{
+    width: 70%;
+    height: 70%;
+}
+
+.box-modal-select{
+    width: 50%;
+}
+
+.select-style{
+    background-color: var(--bg-color-secondary);
+    border: none;
 }

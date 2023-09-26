@@ -45,60 +45,176 @@
         </div>
 
         <div class="box-filtros d-flex justify-content-start align-items-center p-3">
-            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-                tabindex="-1">
+            <div class="modal fade" id="modalOrdenar" aria-hidden="true" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
+                    <div class="modal-content d-flex flex-column align-items-center justify-content-center">
                         <div class="box-modal-title d-flex align-items-center justify-content-center my-4">
                             <p class="text-light fs-4 px-4 py-2 m-0 rounded-4">Ordenar por:</p>
                         </div>
-                        <div class="box-modal-radiobtn">
+                        <div class="box-modal-radiobtn d-flex flex-column align-items-center justify-content-center rounded-3 mb-5">
                             <div class="form-check-reverse">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Melhor avaliação
-                                </label>
+                                <div class="row py-1">
+                                    <div class="col-md-10 d-flex align-items-start">
+                                        <label class="form-check-label">
+                                            Melhor avaliação
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <input class="form-check-input" type="radio" id="melhorAval">
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="form-check-reverse">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Pior avaliação </label>
+                                <div class="row py-1">
+                                    <div class="col-md-10 d-flex align-items-start">
+                                        <label class="form-check-label">
+                                            Pior avaliação
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <input class="form-check-input" type="radio" id="piorAval">
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="form-check-reverse">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Maior quantidade de likes </label>
+                                <div class="row py-1">
+                                    <div class="col-md-10 d-flex align-items-start">
+                                        <label class="form-check-label">
+                                            Maior quantidade de likes
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <input class="form-check-input" type="radio" id="maiorQuantLikes">
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="form-check-reverse">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Menor quantidade de likes </label>
+                                <div class="row py-1">
+                                    <div class="col-md-10 d-flex align-items-start">
+                                        <label class="form-check-label">
+                                            Menor quantidade de likes
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <input class="form-check-input" type="radio" id="menorQuantLikes">
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="form-check-reverse">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Maior quantidade de dislikes </label>
+                                <div class="row py-1">
+                                    <div class="col-md-10 d-flex align-items-start">
+                                        <label class="form-check-label">
+                                            Maior quantidade de dislikes
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <input class="form-check-input" type="radio" id="maiorQuantDisikes">
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="form-check-reverse">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Menor quantidade de dislikes </label>
+                                <div class="row py-1">
+                                    <div class="col-md-10 d-flex align-items-start">
+                                        <label class="form-check-label">
+                                            Menor quantidade de dislikes
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2 d-flex align-items-end">
+                                        <input class="form-check-input" type="radio" id="menorQuantDisikes">
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ordenar</button>
+            <button class="btn btn-primary rounded-4 ms-5" data-bs-target="#modalOrdenar" data-bs-toggle="modal">Ordenar</button>
 
-            <div class="ms-4">
-                <button type="button" class="btn rounded-5 text-light">Filtrar</button>
+            <div class="modal fade" id="modalFiltrar" aria-hidden="true" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content d-flex flex-column align-items-center justify-content-center pb-5">
+                        <div class="box-modal-title d-flex align-items-center justify-content-center my-4">
+                            <p class="text-light fs-4 px-4 py-2 m-0 rounded-4">Filtrar Por:</p>
+                        </div>                        
+
+                        <div class="box-modal-select my-2">
+                            <select class="form-select select-style text-light">
+                              <option selected>Produto</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="box-modal-select my-2">
+                            <select class="form-select select-style text-light">
+                              <option selected>Consumidor</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="box-modal-select my-2">
+                            <select class="form-select select-style text-light">
+                              <option selected>Nota</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="box-modal-title d-flex align-items-center justify-content-center my-4">
+                            <p class="text-light fs-4 px-4 py-2 m-0 rounded-4">Região:</p>
+                        </div>
+
+                        <div class="box-modal-select my-2">
+                            <select class="form-select select-style text-light">
+                              <option selected>País</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="box-modal-select my-2">
+                            <select class="form-select select-style text-light">
+                              <option selected>Estado</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="box-modal-select my-2">
+                            <select class="form-select select-style text-light">
+                              <option selected>Cidade</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="box-modal-select my-2">
+                            <select class="form-select select-style text-light">
+                              <option selected>Bairro</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+            <button class="btn btn-primary rounded-4 ms-5" data-bs-target="#modalFiltrar" data-bs-toggle="modal">Filtrar</button>
+            
         </div>
     </section>
 

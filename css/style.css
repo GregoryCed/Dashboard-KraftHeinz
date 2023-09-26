@@ -56,3 +56,8 @@ body{
     background-color: #B9B6B6;
     border-radius: 50px;
 }
+
+/* Modal */
+.modal-content{
+    background-color: var(--bg-color-primary);
+}
