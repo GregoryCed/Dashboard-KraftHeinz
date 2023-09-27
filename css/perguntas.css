@@ -21,3 +21,27 @@
     width: 40%;
     background-color: #A5BBD7;
 }
+
+
+.modal-pergunta-info{
+    background-color: var(--bg-color-secondary);
+    width: 80%;
+}
+
+.modal-pergunta{
+    background-color: #A5BBD7;
+}
+
+.modal-quant-resp{
+    height: 12vh;
+}
+
+.box-linha{
+    width: 70%;
+    height: 6vh;
+}
+
+.btn-modal{
+    width: 100%;
+}
+

@@ -18,7 +18,7 @@
   <nav class="navbar bg-light mb-5 fixed-top">
     <div class="container-fluid mx-5 d-flex flex-row align-items-center justify-content-between flex-nowrap">
       <a class="navbar-brand" href="#">
-        <img src="../images/kraftHeinzLogo.png" alt="Logo KraftHeinz" width="40%">
+        <img src="../images/kraftHeinzLogo.png" alt="Logo KraftHeinz" width="40%">  
       </a>
       <ul class="navbar-nav d-flex flex-row align-items-center justify-content-between">
         <li class="nav-item">
@@ -39,9 +39,9 @@
 
   <div class="tamanho-nav"></div>
 
-  <section class="container bg-dark-subtle rounded-4 my-5">
+  <section class="container rounded-4 my-5">
     <div class="box-powerbi d-flex aligh justify-content-center align-items-center">
-      <h1>PowerBI</h1>
+      <iframe title="Report Section" width="90%" height="90%" src="https://app.powerbi.com/view?r=eyJrIjoiZGVkZTUzZDQtMWIyNy00MzY1LWIzZmEtM2VjOWIxODFlMmZmIiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
     </div>
   </section>
 
@@ -55,31 +55,91 @@
 
     <div class="box-pricipais-produtos d-flex flex-column align-items-center justify-content-center">
 
-      <div class="box-filtros ">
-        <select class="form-select select-style text-light">
-          <option selected>Selecione um Filtro</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-      </div>
-
       <div class="box-cards d-flex flex-column justify-content-center p-5">
         <div class="row row-cols-1 row-cols-md-3 g-4">
 
           <!-- Inicio card -->
+          <!-- Esse card embaixo é a base dos outros, então só dublicar ele -->
+          <!-- Essa parte mostra os principais produtos, os que foram mais bem avaliados -->
+          <!-- Eu inventei para ficar bonito no vídeo, se for fazer com conexão no banco tem que fazer a comparação das avaliações -->
+
+          <!-- O que tem que ser mudado de acordo com a informação puxada no banco eu vou colocar com
+          um comentário na frente -->
 
           <div class="col">
+            <a href="./produto.html" class="text-decoration-none"> <!--Link que redireciona o usuário para a tela do produto, contendo mais informações daquele que ele clicou-->
             <div class="card h-100">
-              <img src="../images/Ketchup-Tradicional-397g.png" class="card-img-top" alt="...">
+              <img src="../images/Ketchup-Tradicional-397g.png" class="card-img-top" alt="..."> <!--Esse aqui é a imgem do produto-->
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Avaliação</h5>
+                <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="50%"> <!--Esse aqui é as estralas mostrando a avaliação média do produto-->
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <!-- Fim card -->
+          
+          <div class="col">
+            <a href="./produto.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="../images/Ketchup-Quero.png" class="card-img-top" alt="...">
               <div class="card-body d-flex flex-column align-items-center">
                 <h5 class="card-title">Avaliação</h5>
                 <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="50%">
               </div>
             </div>
+            </a>
           </div>
 
-          <!-- Fim card -->
+          <div class="col">
+            <a href="./produto.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="../images/maioneseHeinz.png" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Avaliação</h5>
+                <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="50%">
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./produto.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="../images/maioneseQuero.png" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Avaliação</h5>
+                <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="50%">
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./produto.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="../images/molhoDeTomate.png" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Avaliação</h5>
+                <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="50%">
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="./produto.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="../images/mostardaQuero.png" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Avaliação</h5>
+                <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="50%">
+              </div>
+            </div>
+            </a>
+          </div>
+
         </div>
       </div>
 
@@ -97,6 +157,7 @@
     <!-- Fim seção produtos -->
 
     <!-- Início seção Tickets -->
+    
 
     <div class="d-flex justify-content-center align-items-center box-produtos text-light ">
       <h2 class="fs-1 fw-light">Tickets</h2>
@@ -104,23 +165,20 @@
 
     <div class="box-pricipais-tickets d-flex flex-column align-items-center justify-content-center">
 
-      <div class="box-filtros">
-        <select class="form-select select-style text-light">
-          <option selected>Selecione um Filtro</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-      </div>
-
       <!-- Inicio card group -->
 
       <div class="row box-cards-ticket justify-content-center align-items-center p-5">
 
         <!-- Inicio card -->
+        <!-- Esse card embaixo é a base dos outros, então só dublicar ele -->
+        <!-- Essa parte mostra os principais tickets, os que foram mais bem avaliados -->        
+        
+        <!-- O que tem que ser mudado de acordo com a informação puxada no banco eu vou colocar com
+          um comentário na frente -->
 
         <div class="col-sm-6 mb-3">
           <div class="card">
+            <a class="text-decoration-none text-dark" href="./ticket.html"> <!--Link que redireciona o usuário para a tela do ticket, contendo mais informações daquele que ele clicou-->
             <div class="card-body">
               <div class="container">
                 <div class="row">
@@ -134,21 +192,22 @@
                   </div>
                   <div class="col-8">
                     <div class="box-title-card-ticket d-flex justify-content-center align-items-center p-1">
-                      <p class="m-0 text-center">Gregory Cedraz Araujo</p>
+                      <p class="m-0 text-center">Gregory Cedraz Araujo</p> <!--Nome de quem criou o ticket-->
                     </div>
 
                     <div class="my-2 ms-2">
-                      <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw">
+                      <img src="../images/ESTRELAS-removebg-preview.png" alt="" width="90vw"> <!--Esse aqui é as estralas mostrando a avaliação média do produto-->
                     </div>
 
                     <div class="text-end">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam eos atque similique
-                        suscipit enim!</p>
+                        suscipit enim!</p> <!--Comentário do ticket-->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            </a>
           </div>
         </div>
 

@@ -11,7 +11,6 @@
     <title>Login</title>
 </head>
 <body>
-    <!-- NavBar -->
     <nav class="navbar pt-5 pb-4">
        <div class="container">
          <a class="navbar-brand" href="#">
@@ -20,13 +19,13 @@
        </div>
     </nav>
 
-    <!-- Section principal -->
     <section>
         <div class="container-sm rounded-4 d-flex flex-column align-items-center justify-content-center">
             <div class="mb-5">
                 <h1 class="fs-3 text-center text-light fw-light">Seja Bem-Vindo!<br>Entre com Usuário e Senha</h1>
             </div>
             
+            <!-- Inicio - Formulário de login -->
             <form class="box-form pt-4">
                 <div class="container-inputs">
                     <div class="mb-4">
@@ -40,6 +39,10 @@
                     </div>
                 </div>        
             </form>
+            <!-- Fim - Formulário de login -->
+
+            <!-- O botão esta fora do FORM pois dentro ele não redireciona para a tela que o link manda -->
+            <!-- Se for fazer autenticação tem que colocar ele dentro do FORM e tiara o link que coloquei -->
             <div class="d-flex justify-content-center align-items-center mt-4">
                 <a href="./pages/home.html"><button type="submit" class="btn text-light fw-bold">Login</button></a>
             </div>
