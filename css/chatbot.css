@@ -1,0 +1,18 @@
+.box-chatbot{
+    background-color: var(--bg-color-secondary);
+    min-height: 75vh;
+    width: 80%;
+}
+
+.box-comentario-adm{
+    background-color: #A5BBD7;
+    width: 45%;
+}
+
+.box-resposta-chatbot{
+    background-color: var(--bg-color-third);
+}
+
+.box-input-adm{
+    height: 30vh;
+}
