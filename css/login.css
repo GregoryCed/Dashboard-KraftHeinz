@@ -3,7 +3,7 @@ body{
 }
 
 .container-sm{
-    background-color: var(--bg-color-primary);
+    background-color: var(--bg-color-primary);    
     width: 45%;
     min-width: 45%;
     min-height: 75vh;
@@ -34,4 +34,14 @@ body{
 
 .container-inputs{
     height: 30vh;
+}
+
+@media (max-width: 768px){
+    .container-sm{
+        width: 60%;
+    }
+
+    .btn{
+        padding: 10px 40px;
+    }
 }
