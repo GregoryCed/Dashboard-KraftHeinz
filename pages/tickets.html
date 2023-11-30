@@ -15,30 +15,35 @@
 
 <body>
 
-    <nav class="navbar bg-light fixed-top">
-        <div class="container-fluid mx-5 d-flex flex-row align-items-center justify-content-between flex-nowrap">
-            <a class="navbar-brand" href="#">
-                <img src="../images/kraftHeinzLogo.png" alt="Logo KraftHeinz" width="40%">
-            </a>
-            <ul class="navbar-nav d-flex flex-row align-items-center justify-content-between">
-                <li class="nav-item">
-                    <a class="nav-link active fs-5" aria-current="page" href="./home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fs-5" href="./produtos.html">Produtos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fs-5" href="./tickets.html">Tickets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fs-5" href="./perguntas.html">Perguntas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active fs-5" href="./chatbot.html">Insights Generator</a>
-                  </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid p-3 px-5">
+          <a class="navbar-brand w-50 m-0" href="#">
+            <img src="../images/kraftHeinzLogo.png" alt="Logo KraftHeinz" width="40%">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center text-center justify-content-end w-100">
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="./produtos.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="./tickets.html">Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="./perguntas.html">Perguntas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="./chatbot.html">Insights Generator</a>
+              </li>        
+            </ul>        
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <div class="tamanho-nav"></div>
 
@@ -137,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary rounded-4 ms-5" data-bs-target="#modalOrdenar" data-bs-toggle="modal">Ordenar</button>
+            <button class="btn btn-primary rounded-4 ms-sm-5" data-bs-target="#modalOrdenar" data-bs-toggle="modal">Ordenar</button>
 
             <div class="modal fade" id="modalFiltrar" aria-hidden="true" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
@@ -216,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary rounded-4 ms-5" data-bs-target="#modalFiltrar" data-bs-toggle="modal">Filtrar</button>
+            <button class="btn btn-primary rounded-4 ms-sm-5 ms-3" data-bs-target="#modalFiltrar" data-bs-toggle="modal">Filtrar</button>
             
         </div>
     </section>
