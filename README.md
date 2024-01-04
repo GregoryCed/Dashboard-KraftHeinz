@@ -1,4 +1,6 @@
-# PROPOSTA PASSADA:
+# Dashboard Kraft Heinz - Challenge Fiap 2023
+
+### PROPOSTA PASSADA:
 A Kraft Heinz propôs um desafio para os alunos de SI da Fiap, nos passaram a problemática onde eles não conseguem visualizar o que seus consumidores esperam e reclamam de seus produtos e marcas, dificultando assim o processo de alinhamento de produtos e a inovação que eles buscam.
 
 ### SOLUÇÃO:
